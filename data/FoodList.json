@@ -1,0 +1,70 @@
+{
+  "breakfest": [
+    {
+      "name": "pancakes",
+      "price": "3000",
+      "image": "../assets/images/pancakes.jpeg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum, provident temporibus ad aperiam velit inventore sequi in libero maxime consequuntur perspiciatis alias laborum sed corporis obcaecati esse nihil reprehenderit."
+    },
+    {
+      "name": "country delight",
+      "price": "8000",
+      "image": "../assets/images/delight.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum, provident temporibus ad aperiam velit inventore sequi in libero maxime consequuntur perspiciatis alias laborum sed corporis obcaecati esse nihil reprehenderit."
+    },
+    {
+      "name": "bacon overflow",
+      "price": "3000",
+      "image": "../assets/images/bacon overflow.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum, provident temporibus ad aperiam velit inventore sequi in libero maxime consequuntur perspiciatis alias laborum sed corporis obcaecati esse nihil reprehenderit."
+    }
+  ],
+  "lunch": [
+    {
+      "name": "diner",
+      "price": "1000",
+      "image": "../assets/images/diner.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum, provident temporibus ad aperiam velit inventore sequi in libero maxime consequuntur perspiciatis alias laborum sed corporis obcaecati esse nihil reprehenderit."
+    },
+    {
+      "name": "egg attack",
+      "price": "3000",
+      "image": "../assets/images/egg attack.webp",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum, provident temporibus ad aperiam velit inventore sequi in libero maxime consequuntur perspiciatis alias laborum sed corporis obcaecati esse nihil reprehenderit."
+    },
+    {
+      "name": "american classic",
+      "price": "4000",
+      "image": "../assets/images/american classic.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum, provident temporibus ad aperiam velit inventore sequi in libero maxime consequuntur perspiciatis alias laborum sed corporis obcaecati esse nihil reprehenderit."
+    }
+  ],
+  "shakes": [
+    {
+      "name": "milkshake",
+      "price": "2000",
+      "image": "../assets/images/milkshake.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum, provident temporibus ad aperiam velit inventore sequi in libero maxime consequuntur perspiciatis alias laborum sed corporis obcaecati esse nihil reprehenderit."
+    },
+    {
+      "name": "oreo dream",
+      "price": "7000",
+      "image": "../assets/images/Oreo Milkshake.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum, provident temporibus ad aperiam velit inventore sequi in libero maxime consequuntur perspiciatis alias laborum sed corporis obcaecati esse nihil reprehenderit."
+    },
+    {
+      "name": "quarantine buddy",
+      "price": "1000",
+      "image": "../assets/images/quarantine buddy.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum, provident temporibus ad aperiam velit inventore sequi in libero maxime consequuntur perspiciatis alias laborum sed corporis obcaecati esse nihil reprehenderit."
+    }
+  ],
+  "dinner": [
+    {
+      "name": "bison steak",
+      "price": "3000",
+      "image": "../assets/images/bison steak.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatum, provident temporibus ad aperiam velit inventore sequi in libero maxime consequuntur perspiciatis alias laborum sed corporis obcaecati esse nihil reprehenderit."
+    }
+  ]
+}

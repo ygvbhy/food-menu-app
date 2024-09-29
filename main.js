@@ -1,24 +1,58 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import "./style.css";
+import FoodList from "./data/FoodList.json";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+const btnGroup = document.getElementById("menu-btn");
+btnGroup.addEventListener("click", handleMenuClick);
+
+const menuList = document.querySelector("#menu-list");
+let htmlText = "";
+function handleMenuClick(e) {
+  const id = e.target.id;
+  htmlText = "";
+
+  if (id !== "all") for (const food of FoodList[id]) setHtml(food);
+  else allMenuList();
+
+  innerHtmlMenu();
+}
+
+const allMenuList = () => {
+  for (const menu in FoodList) {
+    for (const food of FoodList[menu]) {
+      setHtml(food);
+    }
+  }
+};
+
+const setHtml = (food) => {
+  htmlText += `
+  <div class="col-6 d-flex justify-content-center">
+    <div class="card mb-3" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="${food.image}" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">${food.name}</h5>
+            <p class="card-text">
+              ${food.description}
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary"
+                >${food.price}원</small
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+  </div>`;
+};
 
-setupCounter(document.querySelector('#counter'))
+const innerHtmlMenu = () => {
+  menuList.innerHTML = htmlText;
+};
+
+allMenuList();
+innerHtmlMenu();
